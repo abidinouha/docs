@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — abidinouha</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-username="abidinouha">
+  <header class="hero">
+    <div class="container">
+      <img class="avatar" src="https://github.com/abidinouha.png" alt="Profile photo" />
+      <div>
+        <h1 id="name">Your Name</h1>
+        <p id="bio">Short bio — edit index.html to personalize.</p>
+        <div class="controls">
+          <label>
+            GitHub username:
+            <input id="username" type="text" value="abidinouha" />
+          </label>
+          <label>
+            Personal access token (optional — never commit):
+            <input id="token" type="password" placeholder="Paste token here to include private/org collaborator repos" />
+          </label>
+          <button id="load">Load projects</button>
+          <button id="clearToken">Clear token</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="projects-section">
+      <h2>Projects I collaborate on</h2>
+      <p class="help">This page will attempt to list public repos you own and repositories you contributed to. For private or organization repos where you are a collaborator, paste a personal access token with appropriate scopes (repo/read) into the token field — the token stays only in your browser (localStorage).</p>
+      <div id="projects" class="grid">
+        <div class="loading">Loading projects…</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>Made with ♥ — edit the files in this repo to customize content and styles.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
